@@ -1,0 +1,108 @@
+/* Reset et styles de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.App {
+  min-height: 100vh;
+  background-color: #121212;
+}
+
+/* Styles pour les boutons */
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Styles pour les cartes */
+.card {
+  background-color: #282828;
+  border-radius: 8px;
+  padding: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.card:hover {
+  background-color: #333333;
+}
+
+/* Styles pour les inputs */
+input {
+  background-color: #333333;
+  border: 1px solid #555555;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 8px 12px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #1DB954;
+}
+
+/* Scrollbar personnalisée */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #282828;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555555;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #777777;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

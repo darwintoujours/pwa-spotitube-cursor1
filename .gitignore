@@ -1,0 +1,84 @@
+# --- Dossiers à ignorer complètement ---
+backend-lambda/
+backend-flask/
+
+# --- Node.js / React ---
+node_modules/
+build/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.*
+.env.local
+.env.development
+.env.production
+*.local
+
+# --- Python / Flask / Lambda ---
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+venv/
+.venv/
+env/
+ENV/
+*.pyc
+*.pyo
+*.pyd
+.coverage
+.tox/
+.mypy_cache/
+.pytest_cache/
+.pyre/
+.dmypy.json
+.pytype/
+
+# --- Clés, secrets, configs sensibles ---
+keys.md
+context.md
+config/api-keys.json
+*.secret.*
+*.key.*
+*.credentials.*
+*.bak
+*.old
+
+# --- IDE / OS / Divers ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# --- Logs ---
+*.log
+
+# --- Tests / Coverage ---
+coverage/
+htmlcov/
+.nyc_output/
+*.lcov
+
+# --- Autres fichiers temporaires ---
+*.tmp
+*.temp
+*.cache
+.cache/
+.parcel-cache/
+*.pid
+
+# --- Dossiers spécifiques à ton projet (exemple) ---
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+
+# --- Documents volumineux ou internes ---
+spotitube_specifications_v2.md
+spotitube_document_updated.md
